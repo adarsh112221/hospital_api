@@ -9,8 +9,11 @@ const patientSchema = new Schema({
     required: true
   },
   phoneNumber: {
-    type: String,
+    type: Number,
     required: true
+  },email:{
+type:String,
+required:true
   },
   address: {
     type: String,

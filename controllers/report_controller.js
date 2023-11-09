@@ -1,5 +1,3 @@
-//create new report
-
 module.exports.status=async function(req,res){
 try{
    console.log("statusss",req.params.status);

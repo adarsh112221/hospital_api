@@ -9,7 +9,7 @@ const db=require('./config/mongoose');
 const passport =require('passport');
 const passportJWT=require('./config/passport_jwt_strategy');
 
-// -----for reading forn data------
+// -----for reading form data------
 app.use(express.urlencoded({extended:true}))
 app.use(passport.initialize());
 app.use('/',require('./routes/index'));

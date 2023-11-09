@@ -8,17 +8,13 @@ const doctorSchema = new Schema({
     type: String,
     required: true
   },
-  age: {
-    type: Number,
-    required: true
-  },
   email: {
     type: String,
     required: true,
     unique: true
   },
   phone: {
-    type: String,
+    type: Number,
     required: true
   },
   password: {
