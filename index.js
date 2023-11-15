@@ -11,6 +11,7 @@ const passportJWT=require('./config/passport_jwt_strategy');
 
 // -----for reading forn data------
 app.use(express.urlencoded({extended:true}))
+app.use(passport.initialize());
 app.use('/',require('./routes/index'));
 
 app.listen(port,(err)=>{

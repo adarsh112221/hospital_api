@@ -1,7 +1,7 @@
 // doctorController.js
 
 const jwt = require('jsonwebtoken');
-const Doctor = require('../models/doctor'); // Assuming the doctor model is in the same directory
+const Doctor = require('../models/Doctor'); 
 module.exports.register=async function(req,res){
     try{
         let doctor=await Doctor.findOne({
@@ -16,7 +16,7 @@ module.exports.register=async function(req,res){
             doctor:doctor
         }})
         }
-    }catch{
+    }catch(err){
         console.log(err);
         return res.status(401).json({message:"error in registration"})
     }

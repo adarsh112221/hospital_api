@@ -18,11 +18,12 @@ const patientSchema = new Schema({
   },
   reports: [
     {
-      // Assuming a report has a name and content
-      name: { type: String, required: true },
-      content: { type: String, required: true }
+     type:mongoose.Schema.Types.ObjectId,
+     ref:'Report'
     }
   ]
+},{
+  timestamps: true
 });
 
 const Patient = mongoose.model('Patient', patientSchema);

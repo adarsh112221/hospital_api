@@ -4,7 +4,7 @@
 const mongoose = require("mongoose");
 
 // Connect to the MongoDB database
-mongoose.connect("mongodb://127.0.0.1:27017/HospitalAPI", {
+mongoose.connect("mongodb://127.0.0.1:27017/HospitalAPI",{
   useNewUrlParser: true,
   useUnifiedTopology: true, // Add this option to avoid a deprecation warning
 });
