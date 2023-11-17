@@ -4,8 +4,9 @@
 const mongoose = require("mongoose");
 
 // Connect to the MongoDB database
-mongoose.connect("mongodb+srv://adarshpandey11222:<hr6eQZu1aGA11yPj>@cluster0.jeipmsk.mongodb.net/",{
+mongoose.connect("mongodb+srv://adarshpandey11222:hr6eQZu1aGA11yPj@cluster0.jeipmsk.mongodb.net/",{
   useNewUrlParser: true,
+  tls: true,
   useUnifiedTopology: true, // Add this option to avoid a deprecation warning
 });
 
